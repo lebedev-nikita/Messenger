@@ -1,13 +1,16 @@
 import React from 'react';
 import './css/InputField.css'
 
+
 class InputField extends React.Component
 {
-	constructor(props) {
+
+  constructor(props) {
     super(props);
-    this.state = { text_mes : ''};
+    this.state = { text_mes : '', mess_id : 0 };
   	this.handleInput = this.handleInput.bind(this);
   	this.handlePress = this.handlePress.bind(this);
+    this.mesege = new Array();
   	}
     
 
@@ -17,27 +20,31 @@ class InputField extends React.Component
 
   	handlePress(event){
   		if (event.key == "Enter"){
-  		//this.setState({text : "" });
-  	    }
+           this.setState({mess_id : this.state.mess_id+1});
+           this.mesege.push(event.target.value);
+           event.target.value='';
+  	   }
   	}
 
     render(){
-    	const tt=this.state.text_mes;
+    	const tt= this.mesege.map( (v) =><h1> {v} </h1>); ///
     	return(
     		<header>
           <div> 
-    			    <textarea type="text" value={this.state.text} onChange={this.handleInput}
+    			    <textarea type="text" 
+                  value={this.state.text}  
+                  onKeyDown={this.handlePress} 
+                  onChange={this.handleInput}
                   wrap="soft"
                   className="InputField"
               />
     		  </div>
-            <textarea type="text" value={tt}
-                  wrap="soft"
-                  className="text"
-                  readonly="readonly"
-              />
+          <div className="text">
+              {tt}
+          </div>
     	  </header>///
       );
+      this.map.clear();
     }
 }
 

@@ -28,13 +28,13 @@
 	border-radius: 10px;
 	height: 777px;
 	width: 667px;
-	color: black;
+	color: green;
 	background: white;
 	position: absolute;;
 	top: 50px;
 	left: 50px;
 	outline: none;
 	resize: none;
-	font-size: 20px;
+	font-size: 10px;
 	font-stretch:ultra-condensed;
 }
