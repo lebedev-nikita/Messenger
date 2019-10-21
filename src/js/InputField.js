@@ -11,7 +11,6 @@ class InputField extends React.Component
   	this.handleInput = this.handleInput.bind(this);
   	this.handlePress = this.handlePress.bind(this);
     this.mesege = new Array();
-    this.mesege_view=new Array();
   	}
     
 
@@ -28,9 +27,11 @@ class InputField extends React.Component
   	   }
   	}
 
+   
+
     render(){
     	const tt= this.mesege.map( (v) => <p className="messege"> {v} </p>   ); ///
-    	return(
+      return(
     		<div className="block">
           <div> 
     			    <textarea 
@@ -40,11 +41,11 @@ class InputField extends React.Component
                 wrap="soft"
                 className="InputField"
               />
-    		  </div>    
-          <div className="textField">
+    		  </div>
+
+          <div  className="textField">
             {tt}
           </div>/// 
-
     	  </div>///
       );
       this.map.clear();
