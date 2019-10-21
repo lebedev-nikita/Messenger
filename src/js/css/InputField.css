@@ -39,23 +39,44 @@
 	scroll-behavior: smooth;
 }
 
-.InputField{
+
+.InputFieldOuter{
 	/*top: 	800px;*/
 	/*position: 	relative;*/
 	position: absolute;
 	top: 	85%;
-	bottom: 0px;
 	left: 	0px;
-	right: 	0%;
+	bottom: 0px;
+	/*right: 	0px;	*/
+	width: 100%;
 	/*max-width: 700px;*/
 	/*min-width: 700px;*/
 
 	background: white;
-	border: 	1px solid #888;
+	border: 	1px solid#000;
+	outline: 	none;
+	resize: 	none;
+
+	border-radius: 	10px;
+}
+.InputFieldInner{
+	/*top: 	800px;*/
+	/*position: 	relative;*/
+	position: absolute;
+	top: 	0px;
+	left: 	0px;
+	bottom: 0px;
+	/*right: 	0px;	*/
+	width: 90%;
+	/*max-width: 700px;*/
+	/*min-width: 700px;*/
+
+	background: white;
+	border: 	none;
 	outline: 	none;
 	resize: 	none;
 	overflow-y: hidden ;
-	border: 	1px solid#000;
+
 	border-radius: 	10px;
 	font-size: 	20px;
 	font-stretch:	ultra-condensed;
@@ -64,7 +85,7 @@
 .Messege{
 	border: 0px solid#000;
 	font-size: 23px;
-	text-align:left;
+	text-align:	left;
 	word-break: break-all;
 	margin: 3%;
 	margin-top: 1%; 

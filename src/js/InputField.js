@@ -30,23 +30,23 @@ class InputField extends React.Component
    
 
     render(){
-    	const tt= this.mesege.map( (v) => <p className="messege"> {v} </p>   ); ///
+    	const tt= this.mesege.map( (v) => <p className="Messege"> {v} </p> ); ///
       return(
     		<div className="ChatBox">
           
-          <div  className="TextField">
-            {tt}
+          <div className="TextField">
+            {tt} 
           </div>/// 
           
-          <div> 
-    			    <textarea 
-                type="text" 
-                onKeyDown={this.handlePress} 
-                onChange={this.handleInput}
-                wrap="soft"
-                className="InputField"
-              />
-    		  </div>
+          <div className="InputFieldOuter">
+  			    <textarea 
+              className="InputFieldInner"
+              type="text" 
+              onKeyDown={this.handlePress} 
+              onChange={this.handleInput}
+              wrap="soft"
+            />
+          </div>
 
     	  </div>///
       );
