@@ -1,4 +1,10 @@
 .InputField{
+	top: 800px;
+	bottom: 50px;
+	left: 50px;
+	right: 200px;
+	max-width: 700px;
+	min-width: 880px;
 
 	background: white;
 	position: absolute;
@@ -6,12 +12,6 @@
 	outline: none;
 	resize: none;
 	overflow-y: hidden ;
-	left:   50px;
-	/*bottom: 30px;
-	right: 500px;*/
-	top: 500px;
-	width:  667px;
-	height: 100px;
 	border: 1px solid#000;
 	border-radius: 10px;
 	font-size: 20px;
@@ -29,7 +29,7 @@
 	border-radius: 10px;
 	/*height: 400px;
 	width: 667px;*/
-	color: green;
+	color: black;
 	background: white;
 	position: absolute;;
 	top: 50px;
@@ -38,6 +38,18 @@
 	left: 50px;
 	outline: none;
 	resize: none;
-	font-size: 10px;
+	font-size: 15px;
 	font-stretch:ultra-condensed;
+	overflow-y: auto;
+}
+
+.messege{
+	border: 0px solid#000;
+	font-size: 23px;
+	text-align:left;
+	word-break: break-all;
+	margin: 3%;
+	margin-top: 1%; 
+
+
 }

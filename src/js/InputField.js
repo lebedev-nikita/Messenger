@@ -11,38 +11,41 @@ class InputField extends React.Component
   	this.handleInput = this.handleInput.bind(this);
   	this.handlePress = this.handlePress.bind(this);
     this.mesege = new Array();
+    this.mesege_view=new Array();
   	}
     
 
   	handleInput(event){
   		  this.setState({text_mes : event.target.value})
+        this.setState({text : event.target.value})
   	}
 
   	handlePress(event){
   		if (event.key == "Enter"){
            this.setState({mess_id : this.state.mess_id+1});
            this.mesege.push(event.target.value);
-           event.target.value='';
+          event.target.value=''; 
   	   }
   	}
 
     render(){
-    	const tt= this.mesege.map( (v) =><h1> {v} </h1>); ///
+    	const tt= this.mesege.map( (v) => <p className="messege"> {v} </p>   ); ///
     	return(
-    		<header>
+    		<div className="block">
           <div> 
-    			    <textarea type="text" 
-                  value={this.state.text}  
-                  onKeyDown={this.handlePress} 
-                  onChange={this.handleInput}
-                  wrap="soft"
-                  className="InputField"
+    			    <textarea 
+                type="text" 
+                onKeyDown={this.handlePress} 
+                onChange={this.handleInput}
+                wrap="soft"
+                className="InputField"
               />
     		  </div>    
           <div className="textField">
-              {tt}
-          </div>
-    	  </header>///
+            {tt}
+          </div>/// 
+
+    	  </div>///
       );
       this.map.clear();
     }
