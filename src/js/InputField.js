@@ -32,7 +32,12 @@ class InputField extends React.Component
     render(){
     	const tt= this.mesege.map( (v) => <p className="messege"> {v} </p>   ); ///
       return(
-    		<div className="block">
+    		<div className="ChatBox">
+          
+          <div  className="TextField">
+            {tt}
+          </div>/// 
+          
           <div> 
     			    <textarea 
                 type="text" 
@@ -43,9 +48,6 @@ class InputField extends React.Component
               />
     		  </div>
 
-          <div  className="textField">
-            {tt}
-          </div>/// 
     	  </div>///
       );
       this.map.clear();

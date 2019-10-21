@@ -1,41 +1,36 @@
-.InputField{
-	top: 800px;
-	bottom: 50px;
-	left: 50px;
-	right: 200px;
-	max-width: 700px;
-	min-width: 880px;
-
-	background: white;
+/*let perc = 10;*/
+.ChatBox{
 	position: absolute;
-	border		: 1px solid #888;
-	outline: none;
-	resize: none;
-	overflow-y: hidden ;
-	border: 1px solid#000;
-	border-radius: 10px;
-	font-size: 20px;
-	font-stretch:ultra-condensed;
+	top: 	10px;
+	bottom: 10px;
+	left:  	10px;
+	right: 	40%;
+
+	/*margin: 10px;*/
+
+	background: yellow;
 }
-.bar{
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.textField{
+
+.TextField{
 	text-align: left;
 	border: 1px solid#000;
 	border-radius: 10px;
+
 	/*height: 400px;
 	width: 667px;*/
 	color: black;
 	background: white;
-	position: absolute;;
-	top: 50px;
-	bottom: 250px;
-	right: 500px;
-	left: 50px;
+
+	/*position: relative;*/
+	position: absolute;
+	/*margin-bottom: 50;*/
+	top: 	0px;
+	bottom: 15%;
+	right: 	0px;
+	left: 	0px;
+
+	/*margin-bottom: 4px;*/
+	
 	outline: none;
 	resize: none;
 	font-size: 15px;
@@ -44,7 +39,29 @@
 	scroll-behavior: smooth;
 }
 
-.messege{
+.InputField{
+	/*top: 	800px;*/
+	/*position: 	relative;*/
+	position: absolute;
+	top: 	85%;
+	bottom: 0px;
+	left: 	0px;
+	right: 	0%;
+	/*max-width: 700px;*/
+	/*min-width: 700px;*/
+
+	background: white;
+	border: 	1px solid #888;
+	outline: 	none;
+	resize: 	none;
+	overflow-y: hidden ;
+	border: 	1px solid#000;
+	border-radius: 	10px;
+	font-size: 	20px;
+	font-stretch:	ultra-condensed;
+}
+
+.Messege{
 	border: 0px solid#000;
 	font-size: 23px;
 	text-align:left;
