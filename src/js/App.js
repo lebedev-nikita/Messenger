@@ -1,6 +1,6 @@
 import React from 'react';
 import Clock from './clock.js'
-import InputField from './InputField'
+import Mesenger from './InputField'
 import './css/App.css';
 
 
@@ -20,7 +20,7 @@ function AppRender() {
         <div className="App">
           <App />
           <Clock/>
-          <InputField/>
+          <Mesenger/>
         </div>///      
     );
 }

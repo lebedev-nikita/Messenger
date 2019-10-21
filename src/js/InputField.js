@@ -1,18 +1,32 @@
 import React from 'react';
 import './css/InputField.css'
+import { Link, animateScroll as scroll } from "react-scroll";
+import { animateScroll } from "react-scroll";
 
+class Mesenger extends React.Component
+{
+    constructor(props) {
+    super(props);
+    this.state = { maybe_i_need_it : ''};
+    this.meseges = new Array();
+    }
+
+    render(){
+      return(
+          <InputField data={this.meseges}/> 
+      );
+    }
+}
 
 class InputField extends React.Component
 {
-
   constructor(props) {
     super(props);
-    this.state = { text_mes : '', mess_id : 0 };
+    this.state = { text_mes : ''  };
   	this.handleInput = this.handleInput.bind(this);
   	this.handlePress = this.handlePress.bind(this);
-    this.mesege = new Array();
+    this.mesege = this.props.data;
   	}
-    
 
   	handleInput(event){
   		  this.setState({text_mes : event.target.value})
@@ -27,29 +41,39 @@ class InputField extends React.Component
   	   }
   	}
 
-   
-
     render(){
-    	const tt= this.mesege.map( (v) => <p className="messege"> {v} </p>   ); ///
       return(
-    		<div className="block">
-          <div> 
-    			    <textarea 
+    		<div className="ChatBox">
+    			    <div className="InputFieldOuter">
+              <textarea 
                 type="text" 
                 onKeyDown={this.handlePress} 
                 onChange={this.handleInput}
                 wrap="soft"
-                className="InputField"
+                className="InputFieldInner"
               />
-    		  </div>
-
-          <div  className="textField">
-            {tt}
-          </div>/// 
-    	  </div>///
+              </div>
+              <OutField data={this.mesege}/>
+    	  </div>
       );
-      this.map.clear();
     }
 }
 
-export default InputField;
+class OutField extends React.Component
+{
+  constructor(props){
+    super(props);
+    this.state = {some : ''};
+    this.mesege = this.props.data;
+  }
+  render(){
+    const tt= this.mesege.map( (v) => <p className="Messege"> {v} </p>   );
+    return(
+      <div id="rrr" className="TextField">
+        {tt}
+      </div> 
+    );
+  }  
+}
+
+export default Mesenger;

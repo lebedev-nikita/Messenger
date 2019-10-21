@@ -1,41 +1,27 @@
-.InputField{
-	top: 800px;
-	bottom: 50px;
-	left: 50px;
-	right: 200px;
-	max-width: 700px;
-	min-width: 880px;
-
-	background: white;
+.ChatBox{
 	position: absolute;
-	border		: 1px solid #888;
-	outline: none;
-	resize: none;
-	overflow-y: hidden ;
-	border: 1px solid#000;
-	border-radius: 10px;
-	font-size: 20px;
-	font-stretch:ultra-condensed;
+	top: 	10px;
+	bottom: 10px;
+	left:  	10px;
+	right: 	40%;
+
+	background: none;
 }
-.bar{
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.textField{
+
+.TextField{  			/* место для сообщений*/
 	text-align: left;
 	border: 1px solid#000;
 	border-radius: 10px;
-	/*height: 400px;
-	width: 667px;*/
+
 	color: black;
 	background: white;
-	position: absolute;;
-	top: 50px;
-	bottom: 250px;
-	right: 500px;
-	left: 50px;
+
+	position: absolute;
+	top: 	0px;
+	bottom: 15%;
+	right: 	0px;
+	left: 	0px;
+	
 	outline: none;
 	resize: none;
 	font-size: 15px;
@@ -44,13 +30,46 @@
 	scroll-behavior: smooth;
 }
 
-.messege{
+.InputFieldOuter{		/* Внешняя часть поля ввода. Зачем? Ответ ищи в InputField.js  */
+	position: absolute;
+	top: 	85%;
+	left: 	0px;
+	bottom: 0px;
+	width: 100%;
+	min-height: 36px;
+
+	background: white;
+	border: 	1px solid#000;
+	outline: 	none;
+	resize: 	none;
+
+	border-radius: 	10px;
+}
+
+.InputFieldInner{		/* Внутренняя часть поля ввода */
+	position: absolute;
+	top: 	0px;
+	left: 	0px;
+	bottom: 0px;
+	width: 90%;
+	min-height: 36px;
+
+	background: white;
+	border: 	none;
+	outline: 	none;
+	resize: 	none;
+	overflow-y: hidden ;
+
+	border-radius: 	10px;
+	font-size: 		20px;
+	font-stretch:	ultra-condensed;
+}
+
+.Messege{
 	border: 0px solid#000;
 	font-size: 23px;
-	text-align:left;
+	text-align:	left;
 	word-break: break-all;
 	margin: 3%;
 	margin-top: 1%; 
-
-
 }
