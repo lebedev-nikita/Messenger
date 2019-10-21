@@ -33,7 +33,7 @@ class InputField extends React.Component
     	const tt= this.mesege.map( (v) => <p className="Messege"> {v} </p> ); ///
       return(
     		<div className="ChatBox"> /* внутри этого блока находятся составляющие чата: 
-                                     поле для ввода и сообщения */
+                                     поле для ввода и поле с сообщениями */
           
           <div className="TextField">
             {tt} 
