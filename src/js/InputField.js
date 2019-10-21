@@ -32,13 +32,24 @@ class InputField extends React.Component
     render(){
     	const tt= this.mesege.map( (v) => <p className="Messege"> {v} </p> ); ///
       return(
-    		<div className="ChatBox">
+    		<div className="ChatBox"> /* внутри этого блока находятся составляющие чата: 
+                                     поле для ввода и сообщения */
           
           <div className="TextField">
             {tt} 
           </div>/// 
           
-          <div className="InputFieldOuter">
+          /* 
+            Далее костыль: 
+            Ширина textarea всегда выравнивается по количеству символов, 
+            которые помещаются в одной ее строке (cols).
+            Из-за этого невозможно задать ей ровно ту ширину, которую нужно - она всегда
+            будет либо немного торчать из-за края блока, либо недоходить до него.
+            Чтобы сгладить этот недочет, делаем так: нужную площадь закрашиваем
+            при помощи InputFieldOuter, а саму textarea помещаем внутрь этого участка, 
+            устанавливая width = 90% и отключая обводку границ (см. InputFieldOuter). 
+          */
+          <div className="InputFieldOuter"> 
   			    <textarea 
               className="InputFieldInner"
               type="text" 
@@ -46,7 +57,8 @@ class InputField extends React.Component
               onChange={this.handleInput}
               wrap="soft"
             />
-          </div>
+          </div>//
+          /* конец костыля */
 
     	  </div>///
       );

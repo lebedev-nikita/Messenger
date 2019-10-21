@@ -1,4 +1,3 @@
-/*let perc = 10;*/
 .ChatBox{
 	position: absolute;
 	top: 	10px;
@@ -6,30 +5,22 @@
 	left:  	10px;
 	right: 	40%;
 
-	/*margin: 10px;*/
-
 	background: yellow;
 }
 
-.TextField{
+.TextField{  			/* место для сообщений*/
 	text-align: left;
 	border: 1px solid#000;
 	border-radius: 10px;
 
-	/*height: 400px;
-	width: 667px;*/
 	color: black;
 	background: white;
 
-	/*position: relative;*/
 	position: absolute;
-	/*margin-bottom: 50;*/
 	top: 	0px;
 	bottom: 15%;
 	right: 	0px;
 	left: 	0px;
-
-	/*margin-bottom: 4px;*/
 	
 	outline: none;
 	resize: none;
@@ -39,18 +30,13 @@
 	scroll-behavior: smooth;
 }
 
-
-.InputFieldOuter{
-	/*top: 	800px;*/
-	/*position: 	relative;*/
+.InputFieldOuter{		/* Внешняя часть поля ввода. Зачем? Ответ ищи в InputField.js  */
 	position: absolute;
 	top: 	85%;
 	left: 	0px;
 	bottom: 0px;
-	/*right: 	0px;	*/
 	width: 100%;
-	/*max-width: 700px;*/
-	/*min-width: 700px;*/
+	min-height: 36px;
 
 	background: white;
 	border: 	1px solid#000;
@@ -59,17 +45,14 @@
 
 	border-radius: 	10px;
 }
-.InputFieldInner{
-	/*top: 	800px;*/
-	/*position: 	relative;*/
+
+.InputFieldInner{		/* Внутренняя часть поля ввода */
 	position: absolute;
 	top: 	0px;
 	left: 	0px;
 	bottom: 0px;
-	/*right: 	0px;	*/
 	width: 90%;
-	/*max-width: 700px;*/
-	/*min-width: 700px;*/
+	min-height: 36px;
 
 	background: white;
 	border: 	none;
@@ -78,7 +61,7 @@
 	overflow-y: hidden ;
 
 	border-radius: 	10px;
-	font-size: 	20px;
+	font-size: 		20px;
 	font-stretch:	ultra-condensed;
 }
 
@@ -89,6 +72,4 @@
 	word-break: break-all;
 	margin: 3%;
 	margin-top: 1%; 
-
-
 }
