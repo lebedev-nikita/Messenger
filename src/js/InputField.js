@@ -37,7 +37,7 @@ class InputField extends React.Component
           
           <div className="TextField">
             {tt} 
-          </div>/// 
+          </div> 
           
           /* 
             Далее костыль: 
@@ -57,10 +57,10 @@ class InputField extends React.Component
               onChange={this.handleInput}
               wrap="soft"
             />
-          </div>//
+          </div>
           /* конец костыля */
 
-    	  </div>///
+    	  </div>
       );
       this.map.clear();
     }

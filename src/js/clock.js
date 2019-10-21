@@ -31,7 +31,7 @@ class Clock extends React.Component
     			<div className="clock"> 
     			 	<div>{value}</div>  
     			 	<div>{date} </div> 
-    			</div>///
+    			</div>
     		);
     }
 }
