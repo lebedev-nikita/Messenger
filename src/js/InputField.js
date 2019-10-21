@@ -38,8 +38,8 @@ class InputField extends React.Component
                   wrap="soft"
                   className="InputField"
               />
-    		  </div>
-          <div className="text">
+    		  </div>    
+          <div className="textField">
               {tt}
           </div>
     	  </header>///
