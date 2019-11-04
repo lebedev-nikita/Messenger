@@ -1,0 +1,68 @@
+:root{
+	--fsize : 30px;
+}
+
+.LeftPanel
+{
+	font-size: var(--fsize);
+	background: grey;
+	position: absolute;
+	top: 0em;
+	bottom: 0em;
+	left: 0em;
+	right: 50em;
+}
+
+.LeftPanelHeader
+{
+	font-size: var(--fsize);
+	background: black;
+	position: absolute;
+	top:0em;
+	left: 0em;
+	right: 0em;
+	bottom: 31em;
+}
+.LeftPanelBottom
+{
+	font-size: var(--fsize);
+	background: lightgrey;
+	position: absolute;
+	top:32em;
+	left: 0em;
+	right: 0em;
+	bottom: 0em;
+}
+
+.LeftPanelChanel
+{
+	font-size: var(--fsize);
+	background: blue;
+	position: absolute;
+	top:2.64em;
+	left: 0em;
+	right: 0em;
+	bottom: 1.65em;
+}
+
+.LeftPanelBottomTextarea
+{
+	font-size: 17px;
+	background: rgba(255,255,255,1);
+	color: black;
+	resize: none;
+	overflow: hidden;
+	outline: none;
+	position: absolute;
+	left: 0.5em;
+	bottom: 0.8em;
+	width: 23em;
+}
+.LeftPanelBottomImage
+{
+	font-size: 17px;
+	position: absolute;
+	top:0.7em;
+	right: 1em;
+	width: 1em;
+}
