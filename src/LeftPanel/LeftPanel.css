@@ -16,7 +16,7 @@
 .LeftPanelHeader
 {
 	font-size: var(--fsize);
-	background: black;
+	background: darkgrey;
 	position: absolute;
 	top:0em;
 	left: 0em;
@@ -26,12 +26,13 @@
 .LeftPanelBottom
 {
 	font-size: var(--fsize);
-	background: lightgrey;
+	background: red;
 	position: absolute;
 	top:32em;
 	left: 0em;
 	right: 0em;
 	bottom: 0em;
+	transition: background .1s;
 }
 
 .LeftPanelChanel
@@ -43,6 +44,9 @@
 	left: 0em;
 	right: 0em;
 	bottom: 1.65em;
+	color: yellow;
+	overflow-y: hidden;
+
 }
 
 .LeftPanelBottomTextarea
@@ -55,14 +59,17 @@
 	outline: none;
 	position: absolute;
 	left: 0.5em;
-	bottom: 0.8em;
+	bottom: 0.7em;
 	width: 23em;
+	border: 0em;
+	border-radius: 0.2em;
 }
-.LeftPanelBottomImage
+
+.logo
 {
-	font-size: 17px;
 	position: absolute;
-	top:0.7em;
-	right: 1em;
-	width: 1em;
+	top:0.4em;
+	left: 0em;
+	height: 2em;
+	width: 2em;
 }
