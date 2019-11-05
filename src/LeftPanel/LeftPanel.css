@@ -5,49 +5,44 @@
 .LeftPanel
 {
 	font-size: var(--fsize);
-	background: grey;
+	background: orange;
 	position: absolute;
 	top: 0em;
 	bottom: 0em;
 	left: 0em;
-	right: 50em;
+	width: 10em;
 }
 
 .LeftPanelHeader
 {
 	font-size: var(--fsize);
 	background: darkgrey;
-	position: absolute;
-	top:0em;
-	left: 0em;
-	right: 0em;
-	bottom: 31em;
+	position: static;
+	height: 2.8em;
 }
+
+.LeftPanelChannels
+{
+	font-size: var(--fsize);
+	background: blue;
+	color: yellow;
+	position: static;
+	/*bottom: 3em;*/
+	overflow-y: hidden;
+}
+
 .LeftPanelBottom
 {
 	font-size: var(--fsize);
 	background: red;
 	position: absolute;
-	top:32em;
 	left: 0em;
 	right: 0em;
 	bottom: 0em;
-	transition: background .1s;
+	height: 3em;
+	/*transition: background .1s;*/
 }
 
-.LeftPanelChanel
-{
-	font-size: var(--fsize);
-	background: blue;
-	position: absolute;
-	top:2.64em;
-	left: 0em;
-	right: 0em;
-	bottom: 1.65em;
-	color: yellow;
-	overflow-y: hidden;
-
-}
 
 .LeftPanelBottomTextarea
 {
@@ -58,9 +53,10 @@
 	overflow: hidden;
 	outline: none;
 	position: absolute;
-	left: 0.5em;
+	left: 0.65em;
 	bottom: 0.7em;
-	width: 23em;
+
+	width: 16em;  /**/
 	border: 0em;
 	border-radius: 0.2em;
 }

@@ -8,7 +8,7 @@ class LeftPanel extends React.Component
 		return (
 			<div className="LeftPanel">
 				<LeftPanelHeader/>
-				<LeftPanelChanel/>
+				<LeftPanelChannel/>
 				<LeftPanelBottom/>
 			</div>
 		);
@@ -67,7 +67,7 @@ class LeftPanelBottom extends React.Component
 		styles.background = this.state.color;
 		return(
 			<div className="LeftPanelBottom" style = {styles}>	
-				<textarea placeholder="Please input name of channel :D"
+				<textarea placeholder="🔍 find channel"
 				wrap="on" rows={this.state.tsize} onClick={this.evhandler} onChange={this.evchange}
 				onKeyUp={this.evkey} onKeyDown={this.entdown} onScroll={this.evhandler} 
 				className="LeftPanelBottomTextarea">  
@@ -94,11 +94,11 @@ function ListItem(props) {
 	);}
 }
 
-class LeftPanelChanel extends React.Component
+class LeftPanelChannel extends React.Component
 {
 	render(){
 		return(
-			<div className="LeftPanelChanel">
+			<div className="LeftPanelChannels">
 				<div>
       				{dataJSON.map( (i) => (<ListItem it={i} />))}
  			   </div>
