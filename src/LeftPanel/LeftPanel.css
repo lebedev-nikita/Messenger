@@ -8,32 +8,40 @@
 
 .LeftPanel
 {
-	font-size: var(--fsize);
-	background: orange;
 	position: absolute;
 	top: 0em;
 	bottom: 0em;
 	left: 0em;
 	width: 10em;
+	
+	font-size: var(--fsize);
+	background: orange;
 }
 
 .LeftPanelHeader
 {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	height: 2.8em;
+
 	font-size: var(--fsize);
 	background: darkgrey;
-	position: static;
-	height: 2.8em;
 }
 
 .LeftPanelChannels
 {
+	position: absolute;
+	left: 0;
+	top: 2.8em;
+	width: 100%;
+	max-height: calc(100% - 2.8em - 1.65em);
+
 	font-size: var(--fsize);
 	background: blue;
 	color: yellow;
-	position: static; /*relative*/
-	/*bottom: 3em;*/
-	overflow-y: none;
-	/*margin-bottom: 3em; */
+	overflow-y: auto;
 }
 
 .channelDisplay
@@ -43,31 +51,32 @@
 
 .LeftPanelBottom
 {
-	font-size: var(--fsize);
-	background: red;
 	position: absolute;
 	left: 0em;
 	right: 0em;
 	bottom: 0em;
 	height: 1.65em;
+
+	font-size: var(--fsize);
+	background: red;
 	/*transition: background .1s;*/
 }
 
 
 .LeftPanelBottomTextarea
 {
+	position: absolute;
+	left: 0.65em;
+	bottom: 0.7em;
+	width: 16.25em; /* сделать через calc()? */
+
 	font-size: 17px;
-	background: rgba(255,255,255,1);
+	background: white;
 	color: black;
 	resize: none;
 	overflow: hidden;
 	outline: none;
-	position: absolute;
-	left: 0.65em;
-	bottom: 0.7em;
-
-	width: 16.25em;  /**/
-	border: 0em;
+	border: 0;
 	border-radius: 0.2em;
 }
 
