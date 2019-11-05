@@ -20,8 +20,7 @@ class LeftPanelHeader extends React.Component
 	render(){
 		return(
 			<div className="LeftPanelHeader">	
-				
-			<a href="https://github.com/lebedev-nikita/Messenger.git" target="_blank" >	<img src={myimage} className="logo" alt="lox" /> </a>
+				<a href="https://github.com/lebedev-nikita/Messenger.git" target="_blank" >	<img src={myimage} className="logo" alt="lox" /> </a>
 			</div>
 		);
 	}
@@ -79,29 +78,26 @@ class LeftPanelBottom extends React.Component
 
 function ListItem(props) {
 	let arr = null;
-	if (props.it.values != "none"){
+	if (props.it.values != "none") {
 		return(
 			<div>	
-			{props.it.name} 
-			 <ul>	{props.it.values.map( (i) => (<ListItem it={i} />))} </ul>				
-			
+				<div className="channelDisplay"> {props.it.name} </div>
+				<ul className="channelUl"> {props.it.values.map( (i) => (<ListItem it={i} />))} </ul>				
 			</div>
 		);		
 	}
-	else{
-	return(
-		<div>{props.it.name}</div>
-	);}
+	else {
+		return(
+			<div  className="channelDisplay">{props.it.name}</div> // if no subchannels
+		);
+	}
 }
 
-class LeftPanelChannel extends React.Component
-{
+class LeftPanelChannel extends React.Component {
 	render(){
 		return(
 			<div className="LeftPanelChannels">
-				<div>
-      				{dataJSON.map( (i) => (<ListItem it={i} />))}
- 			   </div>
+  				{dataJSON.map( (i) => (<ListItem it={i} />))}
 			</div>
 		);
 	}
