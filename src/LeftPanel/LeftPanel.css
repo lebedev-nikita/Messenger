@@ -24,7 +24,7 @@
 	width: 100%;
 	left: 0;
 	top: 0;
-	height: 2.8em;
+	height: 2.4em;
 
 	font-size: var(--fsize);
 	background: darkgrey;
@@ -34,9 +34,9 @@
 {
 	position: absolute;
 	left: 0;
-	top: 2.8em;
+	top: 2.4em;
 	width: 100%;
-	max-height: calc(100% - 2.8em - 1.65em);
+	max-height: calc(100% - 2.4em - 1.65em);
 
 	font-size: var(--fsize);
 	background: blue;
@@ -83,7 +83,7 @@
 .logo
 {
 	position: absolute;
-	top:0.4em;
+	top:0.2em;
 	left: 0em;
 	height: 2em;
 	width: 2em;
