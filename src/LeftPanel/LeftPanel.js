@@ -46,7 +46,7 @@ class LeftPanelBottom extends React.Component
 	evchange(event){
 		this.setState({"tsize" : "5"});
 		this.setState({"color" : "red"});
-		if (event.target.value.length == 0 ) {this.setState({"color" : "lightgrey"});}
+		if (event.target.value.length === 0 ) {this.setState({"color" : "lightgrey"});}
 	}
 
 	entdown(event){
@@ -78,7 +78,7 @@ class LeftPanelBottom extends React.Component
 
 function ListItem(props) {
 	let arr = null;
-	if (props.it.values != "none") {
+	if (props.it.values !== "none") {
 		return(
 			<div>	
 				<div className="channelDisplay"> {props.it.name} </div>
