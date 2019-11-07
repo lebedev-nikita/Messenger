@@ -12,10 +12,10 @@
 	top: 0em;
 	bottom: 0em;
 	left: 0em;
-	width: 10em;
+	width: 12em;
 	
 	font-size: var(--fsize);
-	background: orange;
+	background: darkgrey;
 }
 
 .LeftPanelHeader
@@ -40,13 +40,13 @@
 
 	font-size: var(--fsize);
 	background: blue;
-	color: yellow;
+	color: #474A51;
 	overflow-y: auto;
 }
 
 .channelDisplay
 {
-	background-color: red;
+	
 }
 
 .LeftPanelBottom
@@ -58,7 +58,7 @@
 	height: 1.65em;
 
 	font-size: var(--fsize);
-	background: red;
+	background: pink;
 	/*transition: background .1s;*/
 }
 
@@ -91,7 +91,46 @@
 
 
 .channelUl { /* стиль для тега <ul> на панели каналов */
-	background-color: green;
+	background-color: #A2A2D0;
 	padding-left: 1em;
 	margin: 0;
+}
+
+.channelButton
+{
+	background: none;
+	border:none;
+	outline: none;
+	color: #FFFFFF;
+	opacity: 100%;
+	font-stretch: ultra-condensed;
+	position: relative;
+	left: 12em;
+	bottom: 0.5em;
+	height: 2em;
+	width: 2em;
+	font-family: Rounded;
+}
+.FINDER
+{
+	color: yellow;
+	background: black;
+}
+
+.LeftPanelPlus
+{
+	position: absolute;
+	right: 1em;
+	top:0.7em;
+	height: 1em;
+	width: 1em;
+}
+
+.LeftPanelName
+{
+	position: absolute;
+	color: white;
+	font-size: 30px;
+	left:3em;
+	top:-1.7em;
 }
