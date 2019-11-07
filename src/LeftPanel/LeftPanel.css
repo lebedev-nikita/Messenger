@@ -2,6 +2,8 @@
 	box-sizing: border-box;
 }
 
+@import url('../GlobalVariables.css');
+
 :root{
 	--fsize : 30px;
 }

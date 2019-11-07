@@ -1,0 +1,10 @@
+@import url('../GlobalVariables.css');
+
+.RightPanel
+{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: var(--RightPanelWidth);
+    background-color: yellow;
+}
