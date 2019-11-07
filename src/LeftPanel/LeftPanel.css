@@ -45,7 +45,7 @@
 
 .channelDisplay
 {
-	
+	position: relative;
 }
 
 .LeftPanelBottom
@@ -68,7 +68,7 @@
 	position: absolute;
 	left: 0.65em;
 	bottom: 0.7em;
-	width: 16.25em; /* сделать через calc()? */
+	width: 20.25em; /* сделать через calc()? */
 
 	font-size: 17px;
 	background: white;
@@ -101,11 +101,11 @@
 	background: none;
 	border:none;
 	outline: none;
-	color: #FFFFFF;
+	color: #000000;
 	opacity: 100%;
 	font-stretch: ultra-condensed;
-	position: relative;
-	left: 12em;
+	position: absolute;
+	right:0em;
 	bottom: 0.5em;
 	height: 2em;
 	width: 2em;

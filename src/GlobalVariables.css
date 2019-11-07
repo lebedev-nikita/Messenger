@@ -1,3 +1,5 @@
+@import url('./GlobalVariablesMax.css');
+
 :root{
     --fsize : 30px;
     
@@ -6,7 +8,7 @@
     --LeftPanelBottomHeight: 50px;
 
     --MiddlePanelHeaderHeight: var(--LeftPanelHeaderHeight);
-    --MiddlePanelBottomHeight: 80px;
+    --MiddlePanelBottomHeight: 50px;
 
     --MessageMargin: 30px;
     --MessageHeaderHeight: 60px;

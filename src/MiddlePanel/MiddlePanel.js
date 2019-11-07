@@ -1,5 +1,6 @@
 import React from 'react';
 import './MiddlePanel.css';
+import plain from './plane.png';
 
 class MiddlePanel extends React.Component
 {
@@ -11,12 +12,79 @@ class MiddlePanel extends React.Component
                 <div className="MiddlePanelChat">
                     <Message text="Hello" time="12:14:31" name="Nikita" avatar="https://sun1-24.userapi.com/c851136/v851136437/1bb2dd/Gyr0tYE0Ehg.jpg?ava=1" />
                 </div>
-                <div className="MiddlePanelBottom">
-                </div>
+            
+                
+                <MiddlePanelBottom/>
             </div>
         );
     }   
 }
+
+class MiddlePanelBottom extends React.Component
+{
+    constructor(props)
+    {
+        super(props);
+        this.state={"tsize" : "1","color" : "grey", "text" : ""}
+        this.evhandler=this.evhandler.bind(this);
+        this.evchange=this.evchange.bind(this);
+        this.evkey=this.evkey.bind(this);
+        this.entdown=this.entdown.bind(this);
+        this.handplane=this.handplane.bind(this);
+    }
+
+    evhandler(event){
+        this.setState({"tsize" : "7"});
+        this.setState({"color" : "#6C6874"});
+    }
+
+    evchange(event){
+        this.setState({"tsize" : "7"});
+        this.setState({"color" : "#6C6874"});
+        this.state.text=event.target.value;
+        if (event.target.value.length === 0 ) {this.setState({"color" : "lightgrey"});}
+    }
+
+    entdown(event){
+        if (!event.shiftKey && event.which === 13) {
+    event.preventDefault();}
+    }
+
+    evkey(event){
+        if (!event.shiftKey && event.which === 13){
+            this.setState({"tsize" : "1"});
+            this.setState({"text" : ""});
+            if (event.target.value.length === 0 ) {this.setState({"color" : "lightgrey"});}
+        }
+    }
+
+    handplane(event){
+        this.setState({"tsize" : "1"});
+            this.setState({"text" : ""});
+    }
+
+    render(){
+        return(
+            <div className="MiddlePanelBottom">
+                <textarea 
+                wrap="on" rows={this.state.tsize}
+                placeholder="  Write here ..." value={this.state.text}
+                onClick={this.evhandler} onChange={this.evchange}
+                onKeyUp={this.evkey} onKeyDown={this.entdown} onScroll={this.evhandler} 
+                className="MiddlePanelBottomTextrea"/>
+                <img src={plain} alt="Sorry :)" onClick={this.handplane} className="MiddlePanelBottomPlain"  />
+            </div>
+        );
+    }
+}
+
+
+
+
+
+
+
+
 
 class Message extends React.Component
 {
