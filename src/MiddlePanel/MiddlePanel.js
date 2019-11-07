@@ -33,8 +33,10 @@ class Message extends React.Component
             <div className="Message">
                 <div className="MessageHeader">
                     <img src={this.avatar} className="MessageAvatar" />
-                    <p className="MessageUserName">{this.name}</p>
-                    <p className="MessageTime">{this.time}</p>
+                    <div className="NameAndDate">
+                        <p className="MessageUserName">{this.name}</p>
+                        <p className="MessageTime">{this.time}</p>
+                    </div>
                 </div>
                 <div> {this.text} </div>
             </div>

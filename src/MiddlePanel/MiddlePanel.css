@@ -71,12 +71,24 @@
     border-radius: calc( var(--MessageAvatarHeight) / 2 );
 }
 
+.NameAndDate
+{
+    position: absolute;
+    top: 0;
+    left: var(--MessageUserNameSpaceLeft);
+
+    height: var(--MessageHeaderHeight);
+    width: 300px;
+    background-color: yellow;
+}
+
 .MessageUserName
 {
     position: absolute;
-    left: var(--MessageUserNameSpaceLeft);
+    left: 0;
     top: 0;
     
+    font-size: var(--MessageUserNameFontSize);
     display: block;
     margin: 0;
     padding: 0;
@@ -84,9 +96,10 @@
 .MessageTime
 {
     position: absolute;
-    left: var(--MessageUserNameSpaceLeft);
-    top: 1em;
+    left: 0;
+    top: var(--MessageTimeSpaceTop);
     
+    font-size: var(--MessageTimeFontSize);
     display: block;
     margin: 0;
     padding: 0;

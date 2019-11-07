@@ -22,5 +22,12 @@
     /* SpaceLeft == пространство слева */
     --MessageUserNameSpaceLeft: calc( var(--MessageAvatarHeight) + var(--MessageAvatarSpaceTopOrLeft) * 4 ) ;
 
+    --MessageUserNameFontSize: 24px;
+    --MessageTimeFontSize: calc( var(--MessageUserNameFontSize) * 0.75 );
+
+
+    /*--MessageTimeSpaceTop: 1em;*/
+    --MessageTimeSpaceTop: calc( var(--MessageUserNameFontSize) * 1.25 );
+
     --RightPanelWidth: 400px;
 }
