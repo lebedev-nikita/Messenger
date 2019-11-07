@@ -9,7 +9,7 @@ class MiddlePanel extends React.Component
                 <div className="MiddlePanelHeader">
                 </div>
                 <div className="MiddlePanelChat">
-                    <Message avatar="https://sun1-24.userapi.com/c851136/v851136437/1bb2dd/Gyr0tYE0Ehg.jpg?ava=1" text="Hello" />
+                    <Message text="Hello" time="12:14:31" name="Nikita" avatar="https://sun1-24.userapi.com/c851136/v851136437/1bb2dd/Gyr0tYE0Ehg.jpg?ava=1" />
                 </div>
                 <div className="MiddlePanelBottom">
                 </div>
@@ -33,6 +33,8 @@ class Message extends React.Component
             <div className="Message">
                 <div className="MessageHeader">
                     <img src={this.avatar} className="MessageAvatar" />
+                    <p className="MessageUserName">{this.name}</p>
+                    <p className="MessageTime">{this.time}</p>
                 </div>
                 <div> {this.text} </div>
             </div>

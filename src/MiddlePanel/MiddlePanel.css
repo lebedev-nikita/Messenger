@@ -46,8 +46,7 @@
 .Message
 {
     position: relative;
-    /*height: 100px;*/
-    margin: 40px;
+    margin: var(--MessageMargin);
 
     background-color: lightgrey;
 }
@@ -63,12 +62,32 @@
 .MessageAvatar
 {
     position: absolute;
-    top: var(--AvatarSpaceTopOrLeft);
-    left: var(--AvatarSpaceTopOrLeft);
+    top: var(--MessageAvatarSpaceTopOrLeft);
+    left: var(--MessageAvatarSpaceTopOrLeft);
     height: var(--MessageAvatarHeight);
     width: var(--MessageAvatarHeight);
 
     border: 0;
     border-radius: calc( var(--MessageAvatarHeight) / 2 );
+}
 
+.MessageUserName
+{
+    position: absolute;
+    left: var(--MessageUserNameSpaceLeft);
+    top: 0;
+    
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.MessageTime
+{
+    position: absolute;
+    left: var(--MessageUserNameSpaceLeft);
+    top: 1em;
+    
+    display: block;
+    margin: 0;
+    padding: 0;
 }
