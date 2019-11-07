@@ -13,21 +13,24 @@
 
 .MiddlePanelHeader
 {
-    position: absolute;
+    position: fixed;
     top: 0;
+    left: var(--LeftPanelWidth);
+    right: var(--RightPanelWidth);
     height: var(--MiddlePanelHeaderHeight);
-    width: 100%;
+    z-index: 1;
 
     background-color: green;
 }
 
 .MiddlePanelBottom
 {
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    width: 100%;
-    height: 100px;
+    left: var(--LeftPanelWidth);
+    right: var(--RightPanelWidth);
     height: var(--MiddlePanelBottomHeight);
+    z-index: 1;
 
     background-color: blue;
 }
@@ -38,8 +41,10 @@
     top: var(--MiddlePanelHeaderHeight);
     left: 0;
     width: 100%;
-    min-height: 50px;
+    min-height: 50px; /* Можно убрать? Или нужно для наглядности при 0 сообщений? */
+    z-index: 0;
 
+    margin-bottom: var(--MiddlePanelHeaderHeight);
     background-color: lightgreen;
 }
 

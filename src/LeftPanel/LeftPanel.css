@@ -6,7 +6,7 @@
 
 .LeftPanel
 {
-	position: absolute;
+	position: fixed;
 	top: 0em;
 	bottom: 0em;
 	left: 0em;
