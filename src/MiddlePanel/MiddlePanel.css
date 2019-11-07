@@ -59,3 +59,16 @@
 
     background-color: purple;
 }
+
+.MessageAvatar
+{
+    position: absolute;
+    left: calc( ( var(--MessageHeaderHeight) - var(--MessageAvatarHeight) ) / 2);
+    top: calc( ( var(--MessageHeaderHeight) - var(--MessageAvatarHeight) ) / 2);
+    height: var(--MessageAvatarHeight);
+    width: var(--MessageAvatarHeight);
+
+    border: 0;
+    border-radius: calc( var(--MessageAvatarHeight) / 2 );
+
+}

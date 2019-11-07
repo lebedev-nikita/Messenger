@@ -8,6 +8,7 @@
     --MiddlePanelHeaderHeight: var(--LeftPanelHeaderHeight);
     --MiddlePanelBottomHeight: 80px;
     --MessageHeaderHeight: 60px;
+    --MessageAvatarHeight: calc( var(--MessageHeaderHeight) / 1.25);
 
     --RightPanelWidth: 400px;
 }
