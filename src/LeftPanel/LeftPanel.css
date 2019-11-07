@@ -2,9 +2,7 @@
 	box-sizing: border-box;
 }
 
-:root{
-	--fsize : 30px;
-}
+@import url('../GlobalVariables.css');
 
 .LeftPanel
 {
@@ -12,7 +10,7 @@
 	top: 0em;
 	bottom: 0em;
 	left: 0em;
-	width: 12em;
+	width: var(--LeftPanelWidth);
 	
 	font-size: var(--fsize);
 	background: darkgrey;
@@ -25,6 +23,7 @@
 	left: 0;
 	top: 0;
 	height: 2.4em;
+	height: var(--LeftPanelHeaderHeight);
 
 	font-size: var(--fsize);
 	background: darkgrey;
@@ -34,9 +33,9 @@
 {
 	position: absolute;
 	left: 0;
-	top: 2.4em;
+	top: var(--LeftPanelHeaderHeight);
 	width: 100%;
-	max-height: calc(100% - 2.4em - 1.65em);
+	max-height: calc(100% - var(--LeftPanelHeaderHeight) - var(--LeftPanelBottomHeight));
 
 	font-size: var(--fsize);
 	background: blue;
@@ -56,6 +55,7 @@
 	right: 0em;
 	bottom: 0em;
 	height: 1.65em;
+	height: var(--LeftPanelBottomHeight);
 
 	font-size: var(--fsize);
 	background: pink;

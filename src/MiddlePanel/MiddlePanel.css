@@ -1,0 +1,93 @@
+@import url('../GlobalVariables.css');
+
+.MiddlePanel
+{
+    position: absolute;
+    left: var(--LeftPanelWidth);
+    right: var(--RightPanelWidth);
+    height: 100%;
+
+    font-size: var(--fsize);
+    background-color: orange;
+}
+
+.MiddlePanelHeader
+{
+    position: absolute;
+    top: 0;
+    height: var(--MiddlePanelHeaderHeight);
+    width: 100%;
+
+    background-color: green;
+}
+
+.MiddlePanelBottom
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    height: var(--MiddlePanelBottomHeight);
+
+    background-color: blue;
+}
+
+.MiddlePanelChat
+{
+    position: absolute;
+    top: var(--MiddlePanelHeaderHeight);
+    left: 0;
+    width: 100%;
+    min-height: 50px;
+
+    background-color: lightgreen;
+}
+
+.Message
+{
+    position: relative;
+    margin: var(--MessageMargin);
+
+    background-color: lightgrey;
+}
+
+.MessageHeader
+{
+    position: relative;
+    height: var(--MessageHeaderHeight);
+
+    background-color: purple;
+}
+
+.MessageAvatar
+{
+    position: absolute;
+    top: var(--MessageAvatarSpaceTopOrLeft);
+    left: var(--MessageAvatarSpaceTopOrLeft);
+    height: var(--MessageAvatarHeight);
+    width: var(--MessageAvatarHeight);
+
+    border: 0;
+    border-radius: calc( var(--MessageAvatarHeight) / 2 );
+}
+
+.MessageUserName
+{
+    position: absolute;
+    left: var(--MessageUserNameSpaceLeft);
+    top: 0;
+    
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.MessageTime
+{
+    position: absolute;
+    left: var(--MessageUserNameSpaceLeft);
+    top: 1em;
+    
+    display: block;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,26 @@
+:root{
+    --fsize : 30px;
+    
+    --LeftPanelWidth: 400px;
+    --LeftPanelHeaderHeight: 72px;
+    --LeftPanelBottomHeight: 50px;
+
+    --MiddlePanelHeaderHeight: var(--LeftPanelHeaderHeight);
+    --MiddlePanelBottomHeight: 80px;
+
+    --MessageMargin: 30px;
+    --MessageHeaderHeight: 60px;
+    --MessageAvatarHeight: calc( var(--MessageHeaderHeight) / 1.25);
+
+    /* 
+        место слева и сверху от аватарки 
+        left: var(--AvatarSpaceTopOrLeft); 
+        top: var(--AvatarSpaceTopOrLeft); 
+    */
+    --MessageAvatarSpaceTopOrLeft: calc( ( var(--MessageHeaderHeight) - var(--MessageAvatarHeight) ) / 2); 
+
+    /* SpaceLeft == пространство слева */
+    --MessageUserNameSpaceLeft: calc( var(--MessageAvatarHeight) + var(--MessageAvatarSpaceTopOrLeft) * 4 ) ;
+
+    --RightPanelWidth: 400px;
+}
