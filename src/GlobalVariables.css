@@ -1,3 +1,13 @@
 :root{
     --fsize : 30px;
+    
+    --LeftPanelWidth: 400px;
+    --LeftPanelHeaderHeight: 72px;
+    --LeftPanelBottomHeight: 50px;
+
+    --MiddlePanelHeaderHeight: var(--LeftPanelHeaderHeight);
+    --MiddlePanelBottomHeight: 80px;
+    --MessageHeaderHeight: 60px;
+
+    --RightPanelWidth: 400px;
 }

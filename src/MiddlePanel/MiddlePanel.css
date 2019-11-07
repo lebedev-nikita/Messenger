@@ -1,11 +1,61 @@
+@import url('../GlobalVariables.css');
+
 .MiddlePanel
 {
-/*    position: absolute;
-    top: 0em;
-    bottom: 0em;
-    left: 0em;
-    width: 10em;
-    
+    position: absolute;
+    left: var(--LeftPanelWidth);
+    right: var(--RightPanelWidth);
+    height: 100%;
+
     font-size: var(--fsize);
-    background: orange;
-*/}
+    background-color: orange;
+}
+
+.MiddlePanelHeader
+{
+    position: absolute;
+    top: 0;
+    height: var(--MiddlePanelHeaderHeight);
+    width: 100%;
+
+    background-color: green;
+}
+
+.MiddlePanelBottom
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    height: var(--MiddlePanelBottomHeight);
+
+    background-color: blue;
+}
+
+.MiddlePanelChat
+{
+    position: absolute;
+    top: var(--MiddlePanelHeaderHeight);
+    left: 0;
+    width: 100%;
+    min-height: 50px;
+
+    background-color: lightgreen;
+}
+
+.Message
+{
+    position: relative;
+    /*height: 100px;*/
+    margin: 40px;
+
+    background-color: lightgrey;
+}
+
+.MessageHeader
+{
+    position: relative;
+    height: var(--MessageHeaderHeight);
+
+    background-color: purple;
+}
