@@ -9,7 +9,7 @@
     --MiddlePanelBottomHeight: 80px;
 
     --MessageMargin: 30px;
-    --MessageHeaderHeight: 60px;
+    --MessageHeaderHeight: calc( ( var(--MessageUserNameFontSize) + var(--MessageTimeFontSize) ) * 1.4 );
     --MessageAvatarHeight: calc( var(--MessageHeaderHeight) / 1.25);
 
     /* 
@@ -23,7 +23,7 @@
     --MessageUserNameSpaceLeft: calc( var(--MessageAvatarHeight) + var(--MessageAvatarSpaceTopOrLeft) * 4 ) ;
 
     --MessageUserNameFontSize: 24px;
-    --MessageTimeFontSize: calc( var(--MessageUserNameFontSize) * 0.75 );
+    --MessageTimeFontSize: calc( var(--MessageUserNameFontSize) * 0.85 );
 
 
     /*--MessageTimeSpaceTop: 1em;*/
