@@ -29,8 +29,6 @@
     bottom: 0;
     left: var(--LeftPanelWidth);
     right: var(--RightPanelWidth);
-    width: 100%;
-    height: 130px;
     height: var(--MiddlePanelBottomHeight);
     z-index: 1;
 
@@ -70,7 +68,7 @@
     min-height: 50px; /* Можно убрать? Или нужно для наглядности при 0 сообщений? */
     z-index: 0;
 
-    margin-bottom: var(--MiddlePanelHeaderHeight);
+    margin-bottom: var(--MiddlePanelBottomHeight);
     background-color: lightgreen;
 }
 
