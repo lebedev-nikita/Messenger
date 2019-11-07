@@ -10,5 +10,13 @@
     --MessageHeaderHeight: 60px;
     --MessageAvatarHeight: calc( var(--MessageHeaderHeight) / 1.25);
 
+    /* 
+        место слева и сверху от аватарки 
+        left: var(--AvatarSpaceTopOrLeft); 
+        top: var(--AvatarSpaceTopOrLeft); 
+    */
+    --AvatarSpaceTopOrLeft: calc( ( var(--MessageHeaderHeight) - var(--MessageAvatarHeight) ) / 2); 
+
+
     --RightPanelWidth: 400px;
 }

@@ -63,8 +63,8 @@
 .MessageAvatar
 {
     position: absolute;
-    left: calc( ( var(--MessageHeaderHeight) - var(--MessageAvatarHeight) ) / 2);
-    top: calc( ( var(--MessageHeaderHeight) - var(--MessageAvatarHeight) ) / 2);
+    top: var(--AvatarSpaceTopOrLeft);
+    left: var(--AvatarSpaceTopOrLeft);
     height: var(--MessageAvatarHeight);
     width: var(--MessageAvatarHeight);
 
