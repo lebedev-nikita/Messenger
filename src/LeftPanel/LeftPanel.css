@@ -6,7 +6,7 @@
 
 .LeftPanel
 {
-	position: absolute;
+	position: fixed;
 	top: 0em;
 	bottom: 0em;
 	left: 0em;
@@ -22,7 +22,6 @@
 	width: 100%;
 	left: 0;
 	top: 0;
-	height: 2.4em;
 	height: var(--LeftPanelHeaderHeight);
 
 	font-size: var(--fsize);

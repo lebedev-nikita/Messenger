@@ -13,21 +13,27 @@
 
 .MiddlePanelHeader
 {
-    position: absolute;
+    position: fixed;
     top: 0;
+    left: var(--LeftPanelWidth);
+    right: var(--RightPanelWidth);
     height: var(--MiddlePanelHeaderHeight);
-    width: 100%;
+    z-index: 1;
 
     background-color: green;
 }
 
 .MiddlePanelBottom
 {
-    position: absolute;
-    bottom: 0px;
+    position: fixed;
+    bottom: 0;
+    left: var(--LeftPanelWidth);
+    right: var(--RightPanelWidth);
     width: 100%;
     height: 130px;
     height: var(--MiddlePanelBottomHeight);
+    z-index: 1;
+
     background-color: darkgrey;
 }
 
@@ -61,8 +67,10 @@
     top: var(--MiddlePanelHeaderHeight);
     left: 0;
     width: 100%;
-    min-height: 50px;
+    min-height: 50px; /* Можно убрать? Или нужно для наглядности при 0 сообщений? */
+    z-index: 0;
 
+    margin-bottom: var(--MiddlePanelHeaderHeight);
     background-color: lightgreen;
 }
 
@@ -94,12 +102,24 @@
     border-radius: calc( var(--MessageAvatarHeight) / 2 );
 }
 
+.NameAndDate
+{
+    position: absolute;
+    top: 0;
+    left: var(--MessageUserNameSpaceLeft);
+
+    height: var(--MessageHeaderHeight);
+    width: 300px;
+    background-color: yellow;
+}
+
 .MessageUserName
 {
     position: absolute;
-    left: var(--MessageUserNameSpaceLeft);
+    left: 0;
     top: 0;
     
+    font-size: var(--MessageUserNameFontSize);
     display: block;
     margin: 0;
     padding: 0;
@@ -107,9 +127,10 @@
 .MessageTime
 {
     position: absolute;
-    left: var(--MessageUserNameSpaceLeft);
-    top: 1em;
+    left: 0;
+    top: var(--MessageTimeSpaceTop);
     
+    font-size: var(--MessageTimeFontSize);
     display: block;
     margin: 0;
     padding: 0;
