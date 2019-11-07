@@ -13,7 +13,7 @@
     --LeftPanelBottomHeight: 50px;
 
     --MiddlePanelHeaderHeight: var(--LeftPanelHeaderHeight);
-    --MiddlePanelBottomHeight: 50px;
+    --MiddlePanelBottomHeight: var(--LeftPanelBottomHeight);
 
     --MessageMargin: 30px;
     --MessageAvatarHeight: calc( var(--MessageHeaderHeight) / 1.25);
